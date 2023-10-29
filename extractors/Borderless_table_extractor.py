@@ -409,7 +409,7 @@ class Borderless_Table_digital():
     for row_id ,row in enumerate(table):
       row_json ={"row_id":row_id,"row_value":[]}
       for cell_id,cell in enumerate(row):
-        cell_json = {"bbox" : cell["cell_bbox"], "cell_id":cell_id ,"cell_value":cell["cell_data"]}
+        cell_json = {"bbox" : cell["cell_bbox"], "cell_id":str(row_id)+"_"+str(cell_id) ,"cell_value":cell["cell_data"]}
         row_json["row_value"].append(cell_json)
       table_data.append(row_json)
 
