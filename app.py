@@ -35,4 +35,9 @@ def api_process_pdf():
     return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+
+    doc_path='/workspaces/table_mapper/BMW 2009-1 Vehicle Lease Trust - Aug 09.pdf'
+    page_no=0
+    bbox=[50,111,400,200]
+    print(process_pdf(doc_path, page_no, bbox))
+    # app.run(debug=True)

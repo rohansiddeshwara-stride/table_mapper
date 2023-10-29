@@ -40,7 +40,7 @@ class Borderless_Table_digital():
     self.table_with_cell_bbox, self.table_without_cell_bbox = self.create_final_table(self.rows,self.columns)
 
 
-    self.generate_csv_file(self.table_without_cell_bbox,page_no,table_no)
+    # self.generate_csv_file(self.table_without_cell_bbox,page_no,table_no)
 
     table_extracted=self.generate_json(self.table_with_cell_bbox,page_no,self.bbox)
     return table_extracted
