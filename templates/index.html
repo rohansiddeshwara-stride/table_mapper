@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PDF Processing</title>
+  </head>
+  <body>
+    <h1>PDF Processing</h1>
+    <form action="/process_pdf" method="POST" enctype="multipart/form-data">
+      <input type="file" name="pdf_file" accept=".pdf" required><br>
+      Page Number: <input type="number" name="page_no" required><br>
+      Bounding Box: <input type="text" name="bbox" required><br>
+      <input type="submit" value="Process PDF">
+    </form>
+  </body>
+</html>
